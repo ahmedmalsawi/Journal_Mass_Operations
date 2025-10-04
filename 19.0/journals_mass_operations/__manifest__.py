@@ -4,7 +4,18 @@
     "depends": ["account"],
     "description": "Multiple mass operations for journal entries - Draft, Post, Cancel and more",
     "category": "Accounting",
-    "summary": "Mass draft, post, cancel and print operations for journal entries",
+       "description": """
+        Bulk manage journal entries with one click
+        ==========================================
+        
+        Features:
+        • Mass Set to Draft - Convert posted entries to draft
+        • Mass Post Entries - Post multiple draft entries  
+        • Mass Cancel - Cancel multiple entries
+        • Mass Print - Generate PDF reports for multiple entries
+        
+        Compatible with Odoo 18 and 19.
+    """,
     "author": "NEZAM ERP",
     "license": "LGPL-3",
         "author": "NEZAM ERP",
