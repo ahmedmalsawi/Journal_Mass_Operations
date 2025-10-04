@@ -1,127 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <style>
-    /* تحسينات بسيطة جدًا لا تتعارض مع ستايل المتجر */
-    .hero {text-align:center; padding:24px 12px; border:1px solid #e7e9f1; border-radius:10px; background:#fafbfc; margin-bottom:22px;}
-    .hero img {max-width:140px; margin-bottom:8px;}
-    .sub {color:#6b7280; margin-top:6px;}
-    .shot {display:block; margin:0 auto 18px; max-width:980px; width:100%; border:1px solid #e7e9f1; border-radius:8px;}
-    .kicker {text-transform:uppercase; letter-spacing:.06em; color:#8a92a6; font-size:12px; margin-bottom:4px;}
-    .card {border:1px solid #e7e9f1; border-radius:10px; padding:14px; height:100%;}
-    .muted {color:#6b7280;}
-    .list {margin:0; padding-left:18px;}
-    .list li {margin:6px 0;}
-    .footer {text-align:center; margin-top:26px; color:#6b7280;}
-  </style>
-</head>
-<body>
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+<style>
+.hero{ text-align:center; padding:22px 12px; border:1px solid #e7e9f1; border-radius:10px; background:#fafbfc; margin-bottom:20px;}
+.hero img{ max-width:130px; margin-bottom:8px;}
+.sub{ color:#6b7280; margin-top:6px;}
+.shot{ display:block; margin:0 auto 16px; width:72%; max-width:980px; height:auto; border:1px solid #e7e9f1; border-radius:8px;}
+@media(max-width:900px){ .shot{ width:100%; } }
+.features{ display:flex; flex-wrap:wrap; gap:12px; margin-top:8px;}
+.card{ flex:1 1 260px; max-width:420px; border:1px solid #e7e9f1; border-radius:10px; padding:14px; box-sizing:border-box;}
+.kicker{ text-transform:uppercase; letter-spacing:.06em; color:#8a92a6; font-size:12px; margin-bottom:4px;}
+.muted{ color:#6b7280;}
+.list{ margin:0; padding-left:18px;} .list li{ margin:6px 0;}
+.footer{ text-align:center; margin-top:22px; color:#6b7280;}
+.badges{ text-align:center; margin:8px 0 18px;}
+.badge{ display:inline-block; padding:6px 10px; border-radius:14px; background:#14a871; color:#fff; font-size:12px; margin:3px;}
+</style></head><body>
 
-<!-- HERO -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced hero">
-    <img src="img/nezamerp.png" alt="NEZAM ERP"/>
-    <h2 class="oe_slogan">Journal Mass Operations</h2>
-    <h3 class="oe_slogan">Bulk Management for Journal Entries</h3>
-    <p class="sub">Create · Post · Cancel · Print — perform mass actions directly from Journal Entries list view.</p>
+<section class="oe_container"><div class="oe_row oe_spaced hero">
+  <img src="img/nezamerp.png" alt="NEZAM ERP"/>
+  <h2 class="oe_slogan">Journal Mass Operations</h2>
+  <h3 class="oe_slogan">Odoo 18 Edition</h3>
+  <p class="sub">Mass actions for Journal Entries: Draft · Post · Cancel · Print — tuned for v18.</p>
+</div></section>
+
+<section class="oe_container"><div class="oe_row badges">
+  <span class="badge">Odoo 18</span>
+  <span class="badge">Accounting</span>
+  <span class="badge">Community & Enterprise</span>
+</div></section>
+
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <img class="shot" src="img/1.png" alt="Screenshot"/>
+</div></section>
+
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">Key Features</h3>
+  <div class="features">
+    <div class="card"><div class="kicker">Action</div><h4>Mass Set to Draft</h4><p class="muted">Return posted entries to draft with validations.</p></div>
+    <div class="card"><div class="kicker">Action</div><h4>Mass Post Entries</h4><p class="muted">Post many draft entries at once.</p></div>
+    <div class="card"><div class="kicker">Action</div><h4>Mass Cancel</h4><p class="muted">Cancel selected entries safely.</p></div>
+    <div class="card"><div class="kicker">Reporting</div><h4>Mass Print</h4><p class="muted">Generate PDFs for multiple entries.</p></div>
   </div>
-</section>
+</div></section>
 
-<!-- MAIN SCREENSHOT -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced">
-    <img class="shot" src="img/1.png" alt="Module screenshot"/>
-  </div>
-</section>
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">How It Works</h3>
+  <ol class="list">
+    <li>Accounting → Journal Entries.</li>
+    <li>Select multiple records.</li>
+    <li>Action → choose Draft / Post / Cancel / Print.</li>
+  </ol>
+</div></section>
 
-<!-- FEATURES (2 أعمدة على الديسكتوب/عمود واحد على الموبايل بستايل Odoo) -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced">
-    <h3 class="oe_slogan">Key Features</h3>
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">الوصف بالعربي</h3>
+  <p class="muted">نسخة مخصّصة لأودو 18 لتنفيذ عمليات جماعية على قيود اليومية مباشرة من القائمة.</p>
+</div></section>
 
-    <div class="oe_span6">
-      <div class="card">
-        <div class="kicker">Action</div>
-        <h4>Mass Set to Draft</h4>
-        <p class="muted">Convert posted entries back to draft safely with access-right checks.</p>
-      </div>
-    </div>
+<section class="oe_container"><div class="oe_row oe_spaced footer">
+  <div><b>NEZAM ERP</b> — Professional Odoo Solutions · <a href="https://www.nezamerp.com" target="_blank">nezamerp.com</a></div>
+</div></section>
 
-    <div class="oe_span6">
-      <div class="card">
-        <div class="kicker">Action</div>
-        <h4>Mass Post Entries</h4>
-        <p class="muted">Post multiple draft entries at once from the Action menu.</p>
-      </div>
-    </div>
-
-    <div class="oe_span6">
-      <div class="card">
-        <div class="kicker">Action</div>
-        <h4>Mass Cancel</h4>
-        <p class="muted">Cancel a selection of journal entries in a single operation.</p>
-      </div>
-    </div>
-
-    <div class="oe_span6">
-      <div class="card">
-        <div class="kicker">Reporting</div>
-        <h4>Mass Print</h4>
-        <p class="muted">Generate PDFs for many entries with one click.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced">
-    <h3 class="oe_slogan">How It Works</h3>
-    <ol class="list">
-      <li>Open <b>Accounting → Journal Entries</b>.</li>
-      <li>Select multiple records in the list view.</li>
-      <li>Click <b>Action</b> and choose the mass operation (Draft/Post/Cancel/Print).</li>
-      <li>Confirm — the module processes all selected entries.</li>
-    </ol>
-  </div>
-</section>
-
-<!-- INSTALLATION & COMPAT -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced">
-    <div class="oe_span6">
-      <h3 class="oe_slogan">Easy Installation</h3>
-      <ul class="list">
-        <li>Install from the Apps menu (no extra configuration).</li>
-        <li>Works with Accounting access rules and standard states.</li>
-      </ul>
-    </div>
-    <div class="oe_span6">
-      <h3 class="oe_slogan">Compatibility</h3>
-      <p class="muted">Odoo 18 & 19 · Community & Enterprise</p>
-    </div>
-  </div>
-</section>
-
-<!-- ARABIC BLURB -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced">
-    <h3 class="oe_slogan">الوصف بالعربي (مختصر)</h3>
-    <p class="muted">
-      تنفيذ عمليات جماعية على قيود اليومية (إرجاع لمسودة / ترحيل / إلغاء / طباعة)
-      مباشرةً من قائمة القيود، مع احترام صلاحيات المستخدمين وحالات القيود القياسية.
-    </p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<section class="oe_container">
-  <div class="oe_row oe_spaced footer">
-    <div><b>NEZAM ERP</b> — Professional Odoo Solutions</div>
-    <div>Eng. Ahmed Elsawi · <a href="https://www.nezamerp.com" target="_blank">www.nezamerp.com</a></div>
-  </div>
-</section>
-
-</body>
-</html>
+</body></html>
