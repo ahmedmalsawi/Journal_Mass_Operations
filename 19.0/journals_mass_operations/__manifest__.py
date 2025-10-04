@@ -7,9 +7,20 @@
     "summary": "Mass draft, post, cancel and print operations for journal entries",
     "author": "NEZAM ERP",
     "license": "LGPL-3",
-    "installable": True,
-    "application": False,
+        "author": "NEZAM ERP",
+    "website": "https://www.nezamerp.com",
+    "license": "OPL-1",
+    "depends": ["account"],
     "data": [
         "views/account_move_views.xml",
     ],
+    "images": [
+        "static/description/img/1.png", 
+        "static/description/img/nezamerp.png"  
+    ],
+    "installable": True,
+    "application": False,
+    "price": 1,
+    "currency": "USD",
+    "support": "admin@nezamerp.com",
 }
