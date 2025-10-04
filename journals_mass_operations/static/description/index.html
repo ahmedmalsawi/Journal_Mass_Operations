@@ -1,177 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 10px;
-        }
-        
-        .logo {
-            max-width: 200px;
-            margin: 0 auto 20px;
-            display: block;
-        }
-        
-        .screenshot {
-            width: 100%;
-            max-width: 800px;
-            margin: 30px auto;
-            display: block;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-        
-        .feature {
-            padding: 20px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .feature-icon {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        
-        .compatibility {
-            text-align: center;
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-        
-        .badge {
-            display: inline-block;
-            background: #28a745;
-            color: white;
-            padding: 8px 16px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        
-        .installation {
-            background: #e9f7fe;
-            padding: 25px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background: #2c3e50;
-            color: white;
-            border-radius: 8px;
-        }
-        
-        .footer-logo {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-        
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        
-        .header h1, .header h2 {
-            color: white;
-        }
-    </style>
-</head>
-<body>
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+<style>
+.hero{ text-align:center; padding:22px 12px; border:1px solid #e7e9f1; border-radius:10px; background:#f5fbff; margin-bottom:20px;}
+.hero img{ max-width:130px; margin-bottom:8px;}
+.sub{ color:#6b7280; margin-top:6px;}
+.shot{ display:block; margin:0 auto 16px; width:72%; max-width:980px; height:auto; border:1px solid #e7e9f1; border-radius:8px;}
+@media(max-width:900px){ .shot{ width:100%; } }
+.features{ display:flex; flex-wrap:wrap; gap:12px; margin-top:8px;}
+.card{ flex:1 1 260px; max-width:420px; border:1px solid #e7e9f1; border-radius:10px; padding:14px; box-sizing:border-box;}
+.kicker{ text-transform:uppercase; letter-spacing:.06em; color:#8a92a6; font-size:12px; margin-bottom:4px;}
+.muted{ color:#6b7280;}
+.list{ margin:0; padding-left:18px;} .list li{ margin:6px 0;}
+.footer{ text-align:center; margin-top:22px; color:#6b7280;}
+.badges{ text-align:center; margin:8px 0 18px;}
+.badge{ display:inline-block; padding:6px 10px; border-radius:14px; background:#2563eb; color:#fff; font-size:12px; margin:3px;}
+</style></head><body>
 
-<div class="header">
-    <img src="img/nezamerp.png" alt="NEZAM ERP" class="logo">
-    <h1>Journal Mass Operations</h1>
-    <h2>Bulk Management for Journal Entries</h2>
-    <p>Process multiple journal entries simultaneously with one click</p>
-</div>
+<section class="oe_container"><div class="oe_row oe_spaced hero">
+  <img src="img/nezamerp.png" alt="NEZAM ERP"/>
+  <h2 class="oe_slogan">Journal Mass Operations</h2>
+  <h3 class="oe_slogan">Odoo 19 Edition</h3>
+  <p class="sub">Updated for v19 with UI/UX tweaks and compatibility checks.</p>
+</div></section>
 
-<img src="img/1.png" alt="Module Interface" class="screenshot">
+<section class="oe_container"><div class="oe_row badges">
+  <span class="badge">Odoo 19</span>
+  <span class="badge">Accounting</span>
+  <span class="badge">Community & Enterprise</span>
+</div></section>
 
-<div class="compatibility">
-    <h2>Compatible With</h2>
-    <span class="badge">Odoo 18</span>
-    <span class="badge">Odoo 19</span>
-</div>
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <img class="shot" src="img/1.png" alt="Screenshot"/>
+</div></section>
 
-<h2>Key Features</h2>
-<div class="features">
-    <div class="feature">
-        <div class="feature-icon">📝</div>
-        <h3>Mass Set to Draft</h3>
-        <p>Convert multiple posted entries back to draft status</p>
-    </div>
-    
-    <div class="feature">
-        <div class="feature-icon">🚀</div>
-        <h3>Mass Post Entries</h3>
-        <p>Post multiple draft entries simultaneously</p>
-    </div>
-    
-    <div class="feature">
-        <div class="feature-icon">❌</div>
-        <h3>Mass Cancel</h3>
-        <p>Cancel multiple entries in one operation</p>
-    </div>
-    
-    <div class="feature">
-        <div class="feature-icon">🖨️</div>
-        <h3>Mass Print</h3>
-        <p>Generate PDF reports for multiple entries</p>
-    </div>
-</div>
-
-<div class="installation">
-    <h2>Easy Installation</h2>
-    <ol>
-        <li>Install via Odoo Apps menu</li>
-        <li>No additional configuration required</li>
-        <li>Start using immediately</li>
-    </ol>
-</div>
-
-<h2>How It Works</h2>
-<ol>
-    <li>Go to Accounting → Journal Entries</li>
-    <li>Select multiple entries in list view</li>
-    <li>Click Action dropdown menu</li>
-    <li>Choose your desired mass operation</li>
-    <li>Confirm and let the module process everything</li>
-</ol>
-
-<div class="footer">
-    <img src="img/nezamerp.png" alt="NEZAM ERP" class="footer-logo">
-    <h3>NEZAM ERP</h3>
-    <p>Professional Odoo Solutions</p>
-    <p>Eng. Ahmed Elsawi</p>
-      <a href="https://www.nezamerp.com">www.nezamerp.com</a>
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">Key Features</h3>
+  <div class="features">
+    <div class="card"><div class="kicker">Action</div><h4>Mass Set to Draft</h4><p class="muted">Return posted entries to draft with validations.</p></div>
+    <div class="card"><div class="kicker">Action</div><h4>Mass Post Entries</h4><p class="muted">Post many draft entries at once.</p></div>
+    <div class="card"><div class="kicker">Action</div><h4>Mass Cancel</h4><p class="muted">Cancel selected entries safely.</p></div>
+    <div class="card"><div class="kicker">Reporting</div><h4>Mass Print</h4><p class="muted">Generate PDFs for multiple entries.</p></div>
   </div>
+</div></section>
 
-</body>
-</html>
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">How It Works</h3>
+  <ol class="list">
+    <li>Accounting → Journal Entries.</li>
+    <li>Select multiple records.</li>
+    <li>Action → choose Draft / Post / Cancel / Print.</li>
+  </ol>
+</div></section>
+
+<section class="oe_container"><div class="oe_row oe_spaced">
+  <h3 class="oe_slogan">الوصف بالعربي</h3>
+  <p class="muted">نسخة أودو 19 محدَّثة ومتوافقة مع تحسينات الواجهة في الإصدار 19.</p>
+</div></section>
+
+<section class="oe_container"><div class="oe_row oe_spaced footer">
+  <div><b>NEZAM ERP</b> — Professional Odoo Solutions · <a href="https://www.nezamerp.com" target="_blank">nezamerp.com</a></div>
+</div></section>
+
+</body></html>
