@@ -2,7 +2,7 @@
     "name": "JOURNAL MASS Operations",
     "version": "19.0.0.0.0",
     "depends": ["account"],
-    "description": "Multiple mass operations for journal entries - Draft, Post, Cancel and more",
+    "summary": "Mass draft, post, cancel and print operations for journal entries",
     "category": "Accounting",
        "description": """
         Bulk manage journal entries with one click
