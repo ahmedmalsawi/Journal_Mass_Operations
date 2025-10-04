@@ -17,7 +17,7 @@
     """,
     "author": "NEZAM ERP",
     "website": "https://www.nezamerp.com",
-    "license": "LGPL-3",
+    "license": "OPL-1",
     "depends": ["account"],
     "data": [
         "views/account_move_views.xml",
